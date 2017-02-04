@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const repl = require('repl');
+
+
+config = require('../config')['development'].easymeals_express
+
+EE = require('../easymeals-express-sdk/easymeals-express')
+var cli = repl.start({prompt: '> '});
+
+cli.context.e = new EE(config);
+// cli.context.Recipe = Recipe;

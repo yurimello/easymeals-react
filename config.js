@@ -1,6 +1,6 @@
 module.exports = {
   development: {
-    easymeals-express: {
+    easymeals_express: {
       host: 'localhost',
       port: '3001'
     }
